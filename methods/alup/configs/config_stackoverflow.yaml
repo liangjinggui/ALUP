@@ -1,0 +1,33 @@
+bert_model: './pretrained_models/bert/'
+data_dir: './data'
+logger_name: 'Discovery'
+
+mode: 'train'
+
+num_pretrain_epochs: 100
+num_train_epochs: 34
+
+embed_feat_dim: 768
+head_feat_dim: 128
+
+warmup_proportion: 0.1
+
+lr_pre: 5.0e-5
+lr: 1.0e-5
+
+gpu_id: 4
+
+pretrain_batch_size: 16
+train_batch_size: 32
+eval_batch_size: 64
+test_batch_size: 64
+
+wait_patient: 20
+
+topk: 500
+
+update_per_epoch: 5
+
+rtr_prob: 0.25
+
+finish_pretrain: False
